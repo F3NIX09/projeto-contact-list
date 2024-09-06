@@ -14,7 +14,7 @@ import exclude from '../../assets/exclude.svg';
 
 export default function Home() {
   return (
-    <div>
+    <div className='container'>
       <main>
         <h1>Adicione um contato</h1>
 
@@ -35,21 +35,29 @@ export default function Home() {
 
         <button>Enviar</button>
 
-              </main>
-        <aside>
+      </main>
+      <aside>
+        <div className='container-contact'>
+          <img
+            src={exclude}
+            className="exclude-all"
+            alt="Excluir"
+          />
+          <h2>Meus contatos</h2>
           <ul>
-            <li>
-              <img 
+            <li className='contact'>
+              <img
                 src={exclude}
                 className="exclude"
-                alt="Excluir" 
+                alt="Excluir"
               />
               <h3>Emerson</h3>
               <strong>19999999999</strong>
             </li>
           </ul>
+        </div>
 
-        </aside>
+      </aside>
 
 
     </div>
